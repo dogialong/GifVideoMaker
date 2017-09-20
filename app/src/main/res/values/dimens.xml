@@ -1,0 +1,78 @@
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="layout_height_350dp">350dp</dimen>
+    <dimen name="layout_height_80dp">80dp</dimen>
+    <dimen name="layout_height_64dp">64dp</dimen>
+    <dimen name="layout_height_60dp">60dp</dimen>
+    <dimen name="layout_height_56dp">56dp</dimen>
+    <dimen name="layout_height_48dp">48dp</dimen>
+    <dimen name="layout_height_40dp">40dp</dimen>
+    <dimen name="layout_height_36dp">36dp</dimen>
+    <dimen name="layout_height_32dp">32dp</dimen>
+    <dimen name="layout_height_25dp">25dp</dimen>
+    <dimen name="layout_height_12dp">12dp</dimen>
+    <dimen name="layout_height_6dp">6dp</dimen>
+    <dimen name="layout_height_2dp">2dp</dimen>
+    <dimen name="layout_height_1dp">1dp</dimen>
+
+    <dimen name="layout_margin_48dp">48dp</dimen>
+    <dimen name="layout_margin_40dp">40dp</dimen>
+    <dimen name="layout_margin_32dp">32dp</dimen>
+    <dimen name="layout_margin_20dp">20dp</dimen>
+    <dimen name="layout_margin_16dp">16dp</dimen>
+    <dimen name="layout_margin_14dp">14dp</dimen>
+    <dimen name="layout_margin_12dp">12dp</dimen>
+    <dimen name="layout_margin_10dp">10dp</dimen>
+    <dimen name="layout_margin_8dp">8dp</dimen>
+    <dimen name="layout_margin_6dp">6dp</dimen>
+    <dimen name="layout_margin_4dp">4dp</dimen>
+    <dimen name="layout_margin_1dp">1dp</dimen>
+    <dimen name="layout_margin_2dp">2dp</dimen>
+    <dimen name="view_height_0.1dp">0.1dp</dimen>
+
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+
+    <dimen name="text_size_48sp">48sp</dimen>
+    <dimen name="text_size_36sp">36sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+
+    <dimen name="divider_height_1dp">1dp</dimen>
+    <dimen name="divider_height_0dp">0dp</dimen>
+    <dimen name="elevation_2dp">2dp</dimen>
+    <dimen name="elevation_1dp">1dp</dimen>
+    <dimen name="elevation_0dp">0dp</dimen>
+    <dimen name="radius_2dp">2dp</dimen>
+    <dimen name="radius_1dp">1dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="thumbnail_size">80dp</dimen>
+    <dimen name="recycler_size">100dp</dimen>
+    <dimen name="thumbnail_horizontal_padding">8dp</dimen>
+    <dimen name="thumbnail_vertical_padding">10dp</dimen>
+
+    <!-- BACKGROUND MAIN -->
+    <dimen name="slidingpanel_height">100dp</dimen>
+    <dimen name="slidingpanel_bottom_height">80dp</dimen>
+    <dimen name="layout_dots_main_height">30dp</dimen>
+
+    <!-- picker color -->
+    <dimen name="cpv_required_padding">6dp</dimen>
+</resources>

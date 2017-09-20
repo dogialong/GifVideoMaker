@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clickable="true"
+    tools:context="in.myinnos.awesomeimagepicker.activities.fragment.ImageShowFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:id="@+id/loader"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/error_null_cursor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gridViewImageSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_image_picker"
+        android:paddingBottom="1dp"
+        android:paddingEnd="1dp"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:id="@+id/linearSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSelectCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/tvDone"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listImageSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:background="@color/white"
+        android:layout_margin="@dimen/layout_margin_4dp"
+        android:id="@+id/imageMyGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/infoGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/layout_margin_8dp"
+        android:paddingLeft="@dimen/layout_margin_32dp"
+        android:paddingBottom="@dimen/layout_margin_20dp"
+        android:src="@drawable/ic_menuimage"/>
+
+</RelativeLayout>

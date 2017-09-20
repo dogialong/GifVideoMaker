@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_add_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/photo_editor_sdk_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/img"
+        android:background="@drawable/ic_done_on"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
+
+
+
+

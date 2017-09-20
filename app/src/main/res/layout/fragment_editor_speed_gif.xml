@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:id="@+id/title_speed"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:textColor="@color/white"
+            android:text="Speed"
+            android:layout_marginLeft="@dimen/layout_margin_10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/layout_margin_10dp"
+        android:layout_marginLeft="@dimen/layout_margin_10dp"
+        android:background="@color/gray_500"
+        android:id="@+id/view_line"
+        android:layout_below="@+id/title_speed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_0.1dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/view_line"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <SeekBar
+            android:id="@+id/sliderBarChangeSpeed"
+            style="@style/Material.Widget.Slider"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/layout_margin_12dp"
+            android:paddingRight="@dimen/layout_margin_12dp"
+            android:max="1000"
+            android:progress="500"
+            android:progressDrawable="@drawable/seekbar_progress_drawable"
+            android:thumb="@drawable/thumb_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slower"
+            android:textSize="@dimen/layout_margin_12dp"
+            android:layout_below="@+id/sliderBarChangeSpeed"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faster"
+            android:layout_below="@+id/sliderBarChangeSpeed"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/layout_margin_12dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,350 @@
+<resources>
+    <string name="app_name">GIF MAKER</string>
+    <string name="app_folder">ImageConvertVideoToGif</string>
+    <string name="assets_folder">Palettegen</string>
+    <string name="gif_folder">ConvertVideoToGif</string>
+    <string name="empty_command_toast">You cannot execute empty command</string>
+
+    <string name="color">Color</string>
+    <string name="font">Font</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="save">Save</string>
+    <string name="setting">Setting</string>
+    <string name="creat_gif_from">Creat gif from</string>
+    <string name="photo">Image</string>
+    <string name="video">Video</string>
+    <string name="camera">Camera</string>
+    <string name="shooting">Shooting</string>
+    <string name="internet">Internet</string>
+    <string name="hot">Hot</string>
+    <string name="my_gif">My GIF</string>
+    <string name="preview_gif">Preview GIF</string>
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+    <string name="extract_complete">Extract Complete</string>
+    <string name="progress_video">Progress video</string>
+    <string name="progress_gif">Progress GIF</string>
+    <string name="progress_image">Progress image</string>
+    <string name="creat_gif_complete">Creat gif complete</string>
+    <string name="max_extract">Max extract 60 seconds</string>
+    <string name="creat_new">Creat new</string>
+    <string name="creat_gif">Create GIF</string>
+    <string name="my_library">My library</string>
+    <string name="progress_extract">Progress extract video. Waiting...</string>
+    <string name="toast_screenshot_successful">
+        Saved file at:&#160;
+    </string>
+
+    <string name="text_image_chooser">ImageChooser</string>
+    <string name="text_selected_img">ChooseImage</string>
+    <string name="id_selected_img">selectedImage</string>
+    <string name="id_image_uri">imageUri</string>
+    <string name="text_menu_done">Done</string>
+    <string name="text_image">Image</string>
+
+    <string name="ratio">Ratio</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="rotate">Rotate</string>
+    <string name="reset">Reset</string>
+
+    <!--Request Permission-->
+
+    <string name="error_previewGif">Preview your GIF failed! Try again.</string>
+    <string name="informationGif">Information GIF</string>
+    <string name="name_gif">GIF name</string>
+    <string name="path_gif">GIF path</string>
+    <string name="size_gif">GIF size</string>
+    <string name="date_creat_gif">Date creat GIF</string>
+    <string name="warning_delete_file">Warning</string>
+    <string name="do_you_want_to_delete_file">Do you want to delete file?</string>
+    <string name="image_detail">GIF detail</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+
+    <!--Request Permission-->
+    <string name="permission_info">App requires permission to Storage to view images.</string>
+    <string name="permission_force">App requires permission to Storage to view images. Tap Settings and go to Permissions to grant permission.</string>
+    <string name="permission_ok">OK</string>
+    <string name="permission_settings">Settings</string>
+    <string name="permission_package">package</string>
+
+    <string name="album_view">Select photo album</string>
+    <string name="image_view">Tap to select images</string>
+
+    <string name="selected">selected</string>
+    <string name="limit_exceeded">Can select a maximum of %d images</string>
+    <string name="error_null_cursor">Oops, something went wrong!</string>
+    <string name="add">ADD</string>
+    <string name="edit_gif">Edit GIF</string>
+    <string name="effects">Effects</string>
+    <string name="capture_photo">Capture Photo</string>
+
+    <string name="manage_image">Manage Image</string>
+    <string name="change_speed">Change Speed</string>
+    <string name="change_brightness">Change Brightness</string>
+    <string name="crop_gif_image">Crop GIF Image</string>
+    <string name="add_frame">Add Frame</string>
+    <string name="add_sticker">Add Sticker</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_image">Add Image</string>
+    <string name="slower">Slower</string>
+    <string name="faster">Faster</string>
+    <string name="open_camera">Choose image from camera</string>
+    <string name="open_from_library">Choose image from library </string>
+    <string name="drag_and_drop_to_change">Drag and drop to change position of image</string>
+
+    <!-- share -->
+    <string name="facebook">Facebook</string>
+
+
+    <string name="waiting">Waiting...</string>
+
+    <string name="title_discard_edit">Discard edit</string>
+    <string name="warning_discard_edit">Do you want discard edit?</string>
+    <string name="discard">Discard</string>
+    <string name="keep">Keep</string>
+
+    <string-array name="list_name_frames">
+        <item>Classic</item>
+        <item>Birthday</item>
+        <item>Love</item>
+        <item> Nature </item>
+    </string-array>
+
+    <string-array name="list_gif_slide_show">
+        <item>slide1</item>
+        <item>slide2</item>
+        <item>slide3</item>
+    </string-array>
+
+    <string-array name="list1">
+        <item>ic_none</item>
+        <item>frame11</item>
+        <item>frame12</item>
+        <item>frame13</item>
+        <item>frame14</item>
+        <item>frame15</item>
+        <item>frame16</item>
+        <item>frame17</item>
+        <item>frame18</item>
+        <item>frame19</item>
+        <item>frame110</item>
+        <item>frame111</item>
+
+    </string-array>
+    <string-array name="list2">
+        <item>ic_none</item>
+        <item>frame21</item>
+        <item>frame22</item>
+        <item>frame23</item>
+        <item>frame24</item>
+        <item>frame25</item>
+        <item>frame26</item>
+        <item>frame27</item>
+        <item>frame28</item>
+        <item>frame29</item>
+
+    </string-array>
+    <string-array name="list3">
+        <item>ic_none</item>
+        <item>frame31</item>
+        <item>frame32</item>
+        <item>frame33</item>
+        <item>frame34</item>
+        <item>frame35</item>
+        <item>frame36</item>
+        <item>frame37</item>
+    </string-array>
+    <string-array name="list4">
+        <item>ic_none</item>
+        <item>frame41</item>
+        <item>frame42</item>
+        <item>frame43</item>
+        <item>frame44</item>
+        <item>frame45</item>
+        <item>frame46</item>
+        <item>frame47</item>
+    </string-array>
+
+    <string-array name="stick0">
+        <item>stic00</item>
+        <item>stic01</item>
+        <item>stic02</item>
+        <item>stic03</item>
+        <item>stic04</item>
+        <item>stic05</item>
+        <item>stic06</item>
+        <item>stic07</item>
+        <item>stic08</item>
+        <item>stic09</item>
+        <item>stic010</item>
+    </string-array>
+    <string-array name="stick1">
+        <item>stic10</item>
+        <item>stic11</item>
+        <item>stic12</item>
+        <item>stic13</item>
+        <item>stic14</item>
+        <item>stic15</item>
+        <item>stic16</item>
+        <item>stic17</item>
+        <item>stic18</item>
+        <item>stic19</item>
+        <item>stic110</item>
+        <item>stic111</item>
+        <item>stic112</item>
+        <item>stic113</item>
+        <item>stic114</item>
+        <item>stic115</item>
+        <item>stic116</item>
+        <item>stic117</item>
+        <item>stic118</item>
+        <item>stic119</item>
+        <item>stic120</item>
+        <item>stic121</item>
+        <item>stic122</item>
+        <item>stic123</item>
+        <item>stic124</item>
+    </string-array>
+    <string-array name="stick2">
+        <item>stic20</item>
+        <item>stic21</item>
+        <item>stic22</item>
+        <item>stic23</item>
+        <item>stic24</item>
+        <item>stic25</item>
+        <item>stic26</item>
+        <item>stic27</item>
+        <item>stic28</item>
+        <item>stic29</item>
+        <item>stic210</item>
+        <item>stic211</item>
+    </string-array>
+    <string-array name="stick3">
+        <item>stic30</item>
+        <item>stic31</item>
+        <item>stic32</item>
+        <item>stic33</item>
+        <item>stic34</item>
+        <item>stic35</item>
+        <item>stic36</item>
+        <item>stic37</item>
+        <item>stic38</item>
+    </string-array>
+    <string-array name="stick4">
+        <item>stic40</item>
+        <item>stic41</item>
+        <item>stic42</item>
+        <item>stic43</item>
+        <item>stic44</item>
+        <item>stic45</item>
+        <item>stic46</item>
+        <item>stic47</item>
+        <item>stic48</item>
+        <item>stic49</item>
+        <item>stic410</item>
+        <item>stic411</item>
+        <item>stic412</item>
+    </string-array>
+    <string-array name="stick5">
+        <item>stic50</item>
+        <item>stic51</item>
+        <item>stic52</item>
+        <item>stic53</item>
+        <item>stic54</item>
+        <item>stic55</item>
+        <item>stic56</item>
+        <item>stic57</item>
+        <item>stic58</item>
+        <item>stic59</item>
+        <item>stic510</item>
+        <item>stic511</item>
+        <item>stic512</item>
+        <item>stic513</item>
+        <item>stic514</item>
+        <item>stic515</item>
+        <item>stic516</item>
+
+    </string-array>
+
+    <string-array name="stick6">
+        <item>stic60</item>
+        <item>stic61</item>
+        <item>stic62</item>
+        <item>stic63</item>
+        <item>stic64</item>
+        <item>stic65</item>
+        <item>stic66</item>
+
+    </string-array>
+    <string-array name="stick7">
+        <item>stic70</item>
+        <item>stic71</item>
+        <item>stic72</item>
+        <item>stic73</item>
+        <item>stic74</item>
+        <item>stic75</item>
+        <item>stic76</item>
+        <item>stic77</item>
+        <item>stic78</item>
+        <item>stic79</item>
+        <item>stic710</item>
+        <item>stic711</item>
+        <item>stic712</item>
+        <item>stic713</item>
+        <item>stic714</item>
+    </string-array>
+    <string-array name="group_sticker">
+        <item>stic0</item>
+        <item>stic21</item>
+    </string-array>
+    <string-array name="name_effects">
+        <item>normal</item>
+        <item>contrast</item>
+        <item>pixelation</item>
+        <item>hue</item>
+        <item>gamma</item>
+        <item>sepia</item>
+        <item>grayscale</item>
+        <item>sharpness</item>
+        <item>sobel_edge_detection</item>
+        <item>emboss</item>
+        <item>posterize</item>
+        <item>grouped_filters</item>
+        <item>saturation</item>
+        <item>exposure</item>
+        <item>highlight_shadow</item>
+        <item>monochrome</item>
+        <item>opacity</item>
+        <item>rgb</item>
+        <item>white_balance</item>
+        <item>vignette</item>
+        <item>gaussian_blur</item>
+        <item>box_blur</item>
+        <item>cga_color_space</item>
+        <item>dilation</item>
+        <item>kuwahara</item>
+        <item>rgb_dilation</item>
+        <item>toon</item>
+        <item>smooth_toon</item>
+        <item>bulge_distortion</item>
+        <item>haze</item>
+        <item>non_maximum_suppression</item>
+        <item>swirl</item>
+        <item>weak_pixel_inclusion</item>
+        <item>color_balance</item>
+        <item>levels_min_mid_adjust</item>
+        <item>bilateral_blur</item>
+        <item>transform</item>
+
+
+
+
+    </string-array>
+
+</resources>

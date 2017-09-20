@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_marginLeft="@dimen/layout_margin_12dp"
+            android:layout_marginTop="@dimen/layout_margin_4dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/white"
+            android:text="@string/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="@dimen/layout_margin_6dp"
+            android:layout_below="@id/tvColor"
+            android:id="@+id/listColor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_below="@id/listColor"
+            android:id="@+id/tvFont"
+            android:layout_marginLeft="@dimen/layout_margin_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/white"
+            android:text="@string/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="@dimen/layout_margin_6dp"
+            android:layout_below="@id/tvFont"
+            android:id="@+id/recycleFont"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+
+</ScrollView>

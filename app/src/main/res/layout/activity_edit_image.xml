@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutEditGif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom"
+    app:umanoFadeColor="@color/whitealpha"
+    sothree:umanoDragView="@+id/menu_group"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context="com.gifmaker.gifeditor.ui.activity.GifEditorActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/edit_gif"
+                android:textColor="@color/text_title_color"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/saveImageGif"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_save" />
+        </RelativeLayout>
+
+
+        <pl.droidsonroids.gif.GifGPUImageView
+            android:id="@+id/imageViewPreviewGif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/actionPreviewGif"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp">
+
+        </pl.droidsonroids.gif.GifGPUImageView>
+
+        <com.stickerview.StickerView
+            android:id="@+id/parentImageStickerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/actionPreviewGif"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp"
+            app:showBorder="true"
+            app:showIcons="true">
+
+        </com.stickerview.StickerView>
+
+        <LinearLayout
+            android:id="@+id/actionPreviewGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relActionEditGif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_margin_6dp"
+            android:layout_marginBottom="@dimen/layout_margin_6dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imgBackWardOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/layout_margin_8dp"
+                android:src="@drawable/ic_backward_off"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/previewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/layout_margin_8dp" />
+
+            <ImageView
+                android:id="@+id/imgForwardOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/layout_margin_8dp"
+                android:src="@drawable/ic_forward_off"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relActionEditGif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scrollView">
+
+            <RelativeLayout
+                android:id="@+id/nameActionEditor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:paddingLeft="@dimen/layout_margin_8dp"
+                android:paddingRight="@dimen/layout_margin_8dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/buttonApplyCustomImageToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/layout_margin_4dp"
+                    android:src="@drawable/ic_done"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textCustomImageToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin_4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <ImageView
+                    android:id="@+id/buttonCancelCustomImageToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/layout_margin_4dp"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:id="@+id/group_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="Group Frame:"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/frame_classic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/group_frame"
+                    android:background="@drawable/bolder_textview"
+                    android:text=" Classic "
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/frame_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/frame_classic"
+                    android:text=" Poster "
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.rey.material.widget.FrameLayout
+                android:id="@+id/customImageToGif"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/nameActionEditor"
+                android:background="@color/black"
+                android:paddingLeft="@dimen/layout_margin_8dp"
+                android:paddingRight="@dimen/layout_margin_8dp" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagerFrame"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/nameActionEditor"
+                android:paddingLeft="@dimen/layout_margin_8dp"
+                android:paddingRight="@dimen/layout_margin_8dp"
+                android:visibility="gone"></android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_button"
+            android:padding="@dimen/layout_margin_12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/lnCustomGif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/buttonManagerImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_editor_off"
+                    android:text="image" />
+
+                <ImageView
+                    android:id="@+id/buttonSpeedGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_speed_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonBrightnessImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_brightness_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonCropImageGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_crop_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonEffectGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_fillter_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonAddStickerToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_sticker_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonAddTextToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_text_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonAddFrameToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_frame_off"
+                    android:text="efect" />
+
+                <ImageView
+                    android:id="@+id/buttonAddImageToGif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_8dp"
+                    android:layout_marginRight="@dimen/layout_margin_8dp"
+                    android:src="@drawable/ic_addimage_off"
+                    android:text="efect" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <include layout="@layout/slidingpanel_edit_image"></include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

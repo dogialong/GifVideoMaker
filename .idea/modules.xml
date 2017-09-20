@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FFmpegAndroid/FFmpegAndroid.iml" filepath="$PROJECT_DIR$/FFmpegAndroid/FFmpegAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GifVideoMaker.iml" filepath="$PROJECT_DIR$/GifVideoMaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-gif-drawable/android-gif-drawable.iml" filepath="$PROJECT_DIR$/android-gif-drawable/android-gif-drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/awesomeimagepicker/awesomeimagepicker.iml" filepath="$PROJECT_DIR$/awesomeimagepicker/awesomeimagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photofilterssdk/photofilterssdk.iml" filepath="$PROJECT_DIR$/photofilterssdk/photofilterssdk.iml" />
+    </modules>
+  </component>
+</project>

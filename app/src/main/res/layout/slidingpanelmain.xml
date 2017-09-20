@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_title_color"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.rey.material.widget.RelativeLayout
+                    android:id="@+id/buttonInputFromPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_marginRight="0.1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    app:rd_enable="true"
+                    app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_4dp"
+                        android:text="@string/photo"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="@dimen/text_size_16sp" />
+                </com.rey.material.widget.RelativeLayout>
+
+                <com.rey.material.widget.RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="0.1dp"
+                    android:layout_marginTop="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    app:rd_enable="true"
+                    app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                    <ImageView
+                        android:id="@+id/camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_internet"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/camera"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_4dp"
+                        android:text="@string/internet"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="@dimen/text_size_16sp" />
+                </com.rey.material.widget.RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.rey.material.widget.RelativeLayout
+                    android:gravity="center"
+                    android:id="@+id/buttonInputFromVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="0.1dp"
+                    android:layout_marginLeft="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    app:rd_enable="true"
+                    app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                    <ImageView
+                        android:id="@+id/video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_video" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_4dp"
+                        android:text="@string/video"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="@dimen/text_size_16sp" />
+                </com.rey.material.widget.RelativeLayout>
+
+                <com.rey.material.widget.RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="0.1dp"
+                    android:layout_marginTop="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    app:rd_enable="true"
+                    app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                    <ImageView
+                        android:id="@+id/shooting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_hot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shooting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_4dp"
+                        android:text="@string/hot"
+                        android:textColor="@color/text_title_color"
+                        android:textSize="@dimen/text_size_16sp" />
+                </com.rey.material.widget.RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/open_camera"
+            android:layout_width="@dimen/slidingpanel_height"
+            android:layout_height="@dimen/slidingpanel_height"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_camera"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="10dp" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/actionMain"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginTop="@dimen/layout_margin_8dp"-->
+    <!--android:background="@color/background_button"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="3">-->
+
+    <!--<com.rey.material.widget.LinearLayout-->
+    <!--android:id="@+id/buttonMygifSliding"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="2"-->
+    <!--app:rd_enable="true"-->
+    <!--app:rd_style="@style/RelaytiveLayoutRippleStyle">-->
+
+    <!---->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:src="@drawable/ic_mygif_no_active" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_below="@+id/image"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="top"-->
+    <!--android:padding="@dimen/padding_4dp"-->
+    <!--android:text="@string/my_gif"-->
+    <!--android:textColor="@color/text_color"-->
+    <!--android:textSize="@dimen/text_size_11sp" />-->
+    <!--</com.rey.material.widget.LinearLayout>-->
+
+    <!--<com.rey.material.widget.ImageView-->
+    <!--android:id="@+id/buttonCreatGifSliding"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="@dimen/layout_margin_8dp"-->
+    <!--android:src="@drawable/ic_createnew_on" />-->
+
+    <!--<com.rey.material.widget.LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="2"-->
+    <!--app:rd_enable="true"-->
+    <!--app:rd_style="@style/RelaytiveLayoutRippleStyle">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:src="@drawable/selector_ic_setting" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_below="@+id/image"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="top"-->
+    <!--android:padding="@dimen/padding_4dp"-->
+    <!--android:text="@string/setting"-->
+    <!--android:textColor="@color/text_color"-->
+    <!--android:textSize="@dimen/text_size_11sp" />-->
+    <!--</com.rey.material.widget.LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/visibleSliding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin_16dp"
+        android:paddingTop="@dimen/layout_margin_16dp"
+        android:src="@drawable/ic_arrawdown" />
+
+</LinearLayout>

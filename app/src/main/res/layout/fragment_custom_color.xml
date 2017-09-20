@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imgBack"
+        android:background="@drawable/ic_back"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/layout_height_40dp"
+        android:layout_height="@dimen/layout_height_32dp" />
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/layout_height_40dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imgColor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:id="@+id/tvHexColor"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <com.gifmaker.gifeditor.ui.custom.ColorPickerView
+            android:layout_below="@+id/rlTop"
+            android:id="@+id/colorPickerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

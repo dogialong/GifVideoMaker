@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.gifmaker.gifeditor.ui.activity.SaveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <pl.droidsonroids.gif.GifGPUImageView
+                android:id="@+id/imageViewPreviewGif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+            </pl.droidsonroids.gif.GifGPUImageView>
+
+            <ImageView
+                android:id="@+id/imgGifPlay"
+                android:layout_width="@dimen/layout_height_48dp"
+                android:layout_height="@dimen/layout_height_48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_gifplay"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_marginTop="@dimen/layout_margin_8dp"
+            android:id="@+id/btnSave"
+            android:textColor="@color/text_color"
+            android:background="@drawable/border_button_save"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_32dp"
+            android:text="@string/save"
+            android:textSize="16sp"
+            android:textAllCaps="false" />
+        <View
+            android:layout_marginTop="@dimen/layout_margin_40dp"
+            android:layout_below="@+id/btnSave"
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_title_color" />
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_margin_48dp"
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingTop="@dimen/padding_4dp"
+            android:text="@string/share"
+            android:textAllCaps="false"
+            android:textColor="@color/text_title_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/llShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnShare"
+            android:layout_marginTop="@dimen/layout_height_25dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_height_32dp"
+                    android:layout_below="@id/imgFacebook"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/layout_margin_16dp"
+                    android:text="@string/facebook"
+                    android:textColor="@color/text_title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFacebook1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_height_32dp"
+                    android:layout_below="@+id/imgFacebook1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/layout_margin_16dp"
+                    android:text="@string/facebook"
+                    android:textColor="@color/text_title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFacebook2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_height_32dp"
+                    android:layout_below="@id/imgFacebook2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/layout_margin_16dp"
+                    android:text="@string/facebook"
+                    android:textColor="@color/text_title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFacebook3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_height_32dp"
+                    android:layout_below="@id/imgFacebook3"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/layout_margin_16dp"
+                    android:text="@string/facebook"
+                    android:textColor="@color/text_title_color" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

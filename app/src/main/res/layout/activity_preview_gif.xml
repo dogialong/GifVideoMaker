@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingLeft="@dimen/layout_margin_8dp"
+    android:paddingRight="@dimen/layout_margin_8dp"
+    tools:context="com.gifmaker.gifeditor.ui.activity.PreviewGifActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/preview_gif"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/buttonInforGif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_detail" />
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageMyGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/actionGif"
+        android:layout_below="@+id/actionBar"
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/imagePauseMyGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actionGif"
+        android:layout_below="@+id/actionBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_gifplay" />
+
+    <LinearLayout
+        android:id="@+id/actionGif"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/buttonEditGif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/ic_editgif" />
+
+        <ImageView
+            android:id="@+id/buttonShareGif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_sharegif" />
+
+        <ImageView
+            android:id="@+id/buttonDeleteGif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/ic_deletegif" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

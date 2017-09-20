@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/menu_group"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context=".ui.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_title_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/actionMain"
+            android:layout_below="@+id/titleMain"
+            android:layout_marginBottom="@dimen/layout_margin_20dp"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/actionMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/slidingpanel_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.rey.material.widget.LinearLayout
+                android:id="@+id/buttonMygif"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/slidingpanel_bottom_height"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@color/background_button"
+                android:orientation="vertical"
+                android:weightSum="2"
+                app:rd_enable="true"
+                app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_mygif_no_active" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="@dimen/padding_4dp"
+                    android:text="@string/my_gif"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_11sp" />
+            </com.rey.material.widget.LinearLayout>
+
+            <com.rey.material.widget.RelativeLayout
+                android:id="@+id/buttonCreatGif"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/slidingpanel_bottom_height"
+                    android:background="@color/background_button"
+                    android:layout_alignParentBottom="true"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_create_gif"
+                    app:civ_border_color="@color/background_button"
+                    app:civ_border_width="12dp"
+                    android:layout_marginLeft="@dimen/layout_margin_4dp"
+                    android:layout_marginRight="@dimen/layout_margin_4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </com.rey.material.widget.RelativeLayout>
+
+            <com.rey.material.widget.LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/slidingpanel_bottom_height"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@color/background_button"
+                android:orientation="vertical"
+                android:weightSum="2"
+                app:rd_enable="true"
+                app:rd_style="@style/RelaytiveLayoutRippleStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/selector_ic_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="@dimen/padding_4dp"
+                    android:text="@string/setting"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_11sp" />
+            </com.rey.material.widget.LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/slidingpanelmain" />
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

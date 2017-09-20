@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutMyGif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/menu_group"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context="com.gifmaker.gifeditor.ui.activity.MyGifActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/layout_margin_8dp">
+
+        <RelativeLayout
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin_12dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/my_gif"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listMyGif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/actionBar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_button"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_margin_8dp">
+
+        <LinearLayout
+            android:id="@+id/detailGif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_25dp"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mg_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin_14dp"
+                android:gravity="center_vertical"
+                android:text="@string/informationGif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="@dimen/layout_margin_6dp"
+            android:layout_marginTop="@dimen/layout_margin_6dp"
+            android:background="@color/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/editGif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_25dp"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mg_editimage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin_14dp"
+                android:gravity="center_vertical"
+                android:text="@string/edit_gif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="@dimen/layout_margin_6dp"
+            android:layout_marginTop="@dimen/layout_margin_6dp"
+            android:background="@color/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/shareGif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_25dp"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mg_share" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin_14dp"
+                android:gravity="center_vertical"
+                android:text="@string/share"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="@dimen/layout_margin_6dp"
+            android:layout_marginTop="@dimen/layout_margin_6dp"
+            android:background="@color/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/deleteGif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_25dp"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mg_del" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin_14dp"
+                android:gravity="center_vertical"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="in.myinnos.awesomeimagepicker.activities.fragment.AlbumShowFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:id="@+id/progressLoader"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/error_null_cursor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gridViewAlbumSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_image_picker"
+        android:paddingBottom="1dp"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:paddingTop="1dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth" />clerView>
+
+</FrameLayout>
